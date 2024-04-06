@@ -1,0 +1,193 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="restaurant">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="descriptions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="description" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="sloga"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="language"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="contacts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="address">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="street"/>
+                    <xs:element type="xs:string" name="city"/>
+                    <xs:element type="xs:short" name="zip"/>
+                    <xs:element type="xs:string" name="email"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:float" name="latitude"/>
+                  <xs:attribute type="xs:float" name="longtitue"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="schedule">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="day" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="from"/>
+                          <xs:element type="xs:string" name="to"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="phones">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="phone" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:int">
+                            <xs:attribute type="xs:string" name="countryCode"/>
+                            <xs:attribute type="xs:boolean" name="stationary"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="socialMedias">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="socialMedia" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="xs:string" name="url"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="platform"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="menu">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="dish" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element name="price">
+                      <xs:complexType>
+                        <xs:simpleContent>
+                          <xs:extension base="xs:short">
+                            <xs:attribute type="xs:string" name="currency"/>
+                          </xs:extension>
+                        </xs:simpleContent>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:string" name="description"/>
+                    <xs:element name="properties">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="ingrodients">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element type="xs:string" name="ingrodient" maxOccurs="unbounded" minOccurs="0"/>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:short" name="calories"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:integer" name="id"/>
+                  <xs:attribute type="xs:string" name="language"/>
+                  <xs:attribute type="xs:boolean" name="happyTime"/>
+                  <xs:attribute type="xs:boolean" name="vegan"/>
+                  <xs:attribute type="xs:string" name="category"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="team">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="member" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="name"/>
+                    <xs:element type="xs:string" name="position"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reviews">
+          <xs:complexType>
+            <xs:choice maxOccurs="unbounded" minOccurs="0">
+              <xs:element name="review">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:string" name="author"/>
+                    <xs:element type="xs:string" name="position"/>
+                    <xs:element type="xs:string" name="comment"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:integer" name="rating"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:choice>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="reservations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="reservation" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="customer">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="name"/>
+                          <xs:element name="phone">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:int">
+                                  <xs:attribute type="xs:string" name="countryCode"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                          <xs:element type="xs:string" name="email"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element type="xs:integer" name="partySize"/>
+                    <xs:element type="xs:string" name="specialRequests"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:integer" name="id"/>
+                  <xs:attribute type="xs:date" name="date"/>
+                  <xs:attribute type="xs:string" name="time"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
