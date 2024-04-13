@@ -92,7 +92,7 @@
         </dish>
         <dish id="3" language="en" happyTime="true" vegan="false" category="english">
             <name>Stake</name>
-            <price currency="CZK">2000</price>
+            <price currency="EUR">10</price>
             <description>Beef stake</description>
             <properties>
                 <ingrodients>

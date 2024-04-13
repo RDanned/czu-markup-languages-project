@@ -1,4 +1,50 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ratingType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="5"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="emailType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="dayOfWeekType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Monday"/>
+      <xs:enumeration value="Tuesday"/>
+      <xs:enumeration value="Wednesday"/>
+      <xs:enumeration value="Thursday"/>
+      <xs:enumeration value="Friday"/>
+      <xs:enumeration value="Saturday"/>
+      <xs:enumeration value="Sunday"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="socialPlatformType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="instagram"/>
+      <xs:enumeration value="facebook"/>
+      <xs:enumeration value="telegram"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="currencyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="CZK"/>
+      <xs:enumeration value="EUR"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="urlType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="(http|https)://.*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
   <xs:element name="restaurant">
     <xs:complexType>
       <xs:sequence>
@@ -28,7 +74,7 @@
                     <xs:element type="xs:string" name="street"/>
                     <xs:element type="xs:string" name="city"/>
                     <xs:element type="xs:short" name="zip"/>
-                    <xs:element type="xs:string" name="email"/>
+                    <xs:element type="emailType" name="email"/>
                   </xs:sequence>
                   <xs:attribute type="xs:float" name="latitude"/>
                   <xs:attribute type="xs:float" name="longtitue"/>
@@ -40,7 +86,7 @@
                     <xs:element name="day" maxOccurs="unbounded" minOccurs="0">
                       <xs:complexType>
                         <xs:sequence>
-                          <xs:element type="xs:string" name="name"/>
+                          <xs:element type="dayOfWeekType" name="name"/>
                           <xs:element type="xs:string" name="from"/>
                           <xs:element type="xs:string" name="to"/>
                         </xs:sequence>
@@ -72,9 +118,9 @@
                       <xs:complexType>
                         <xs:sequence>
                           <xs:element type="xs:string" name="name"/>
-                          <xs:element type="xs:string" name="url"/>
+                          <xs:element type="urlType" name="url"/>
                         </xs:sequence>
-                        <xs:attribute type="xs:string" name="platform" />
+                        <xs:attribute type="socialPlatformType" name="platform" />
                       </xs:complexType>
                     </xs:element>
                   </xs:sequence>
@@ -95,7 +141,7 @@
                       <xs:complexType>
                         <xs:simpleContent>
                           <xs:extension base="xs:short">
-                            <xs:attribute type="xs:string" name="currency" />
+                            <xs:attribute type="currencyType" name="currency" />
                           </xs:extension>
                         </xs:simpleContent>
                       </xs:complexType>
@@ -152,7 +198,7 @@
                     <xs:element type="xs:string" name="position"/>
                     <xs:element type="xs:string" name="comment"/>
                   </xs:sequence>
-                  <xs:attribute type="xs:byte" name="rating" />
+                  <xs:attribute type="ratingType" name="rating" />
                 </xs:complexType>
               </xs:element>
             </xs:choice>
@@ -178,7 +224,7 @@
                               </xs:simpleContent>
                             </xs:complexType>
                           </xs:element>
-                          <xs:element type="xs:string" name="email"/>
+                          <xs:element type="emailType" name="email"/>
                         </xs:sequence>
                       </xs:complexType>
                     </xs:element>
