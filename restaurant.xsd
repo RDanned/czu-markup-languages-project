@@ -1,4 +1,6 @@
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Type with restrictions for rating -->
   <xs:simpleType name="ratingType">
     <xs:restriction base="xs:integer">
       <xs:minInclusive value="1"/>
@@ -6,12 +8,14 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Type with restrictions for email only strings -->
   <xs:simpleType name="emailType">
     <xs:restriction base="xs:string">
       <xs:pattern value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"/>
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Type with restrictions for day of week -->
   <xs:simpleType name="dayOfWeekType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="Monday"/>
@@ -24,6 +28,7 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Type with restrictions for social media platforms -->
   <xs:simpleType name="socialPlatformType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="instagram"/>
@@ -32,6 +37,7 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Type with restrictions for currency -->
   <xs:simpleType name="currencyType">
     <xs:restriction base="xs:string">
       <xs:enumeration value="CZK"/>
@@ -39,6 +45,7 @@
     </xs:restriction>
   </xs:simpleType>
 
+  <!-- Type with restrictions for url that begins with http or https -->
   <xs:simpleType name="urlType">
     <xs:restriction base="xs:string">
       <xs:pattern value="(http|https)://.*"/>
