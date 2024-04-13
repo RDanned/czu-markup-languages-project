@@ -59,6 +59,4 @@
         <xsl:text>]</xsl:text>
     </xsl:template>
 
-TODO
-
 </xsl:stylesheet>

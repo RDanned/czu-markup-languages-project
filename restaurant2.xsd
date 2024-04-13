@@ -9,7 +9,7 @@
                 <xs:complexType>
                   <xs:sequence>
                     <xs:element type="xs:string" name="name"/>
-                    <xs:element type="xs:string" name="sloga"/>
+                    <xs:element type="xs:string" name="slogan"/>
                   </xs:sequence>
                   <xs:attribute type="xs:string" name="language"/>
                 </xs:complexType>
