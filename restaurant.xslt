@@ -105,6 +105,7 @@
     <xsl:template match="menu">
         <xsl:text>"menu": [</xsl:text>
         <xsl:for-each select="dish">
+            <xsl:sort select="@id" data-type="number" order="ascending"/>
             <xsl:if test="position() != 1">
                 <xsl:text>,</xsl:text>
             </xsl:if>
@@ -143,6 +144,7 @@
 
             <xsl:text>", "properties": {"ingrodients": [</xsl:text>
             <xsl:for-each select="properties/ingrodients/ingrodient">
+                <xsl:sort select="." data-type="text" order="ascending"/>
                 <xsl:if test="position() != 1">
                     <xsl:text>,</xsl:text>
                 </xsl:if>
@@ -197,6 +199,7 @@
     <xsl:template match="reservations">
         <xsl:text>"reservations": [</xsl:text>
         <xsl:for-each select="reservation">
+            <xsl:sort select="@id" data-type="number" order="descending"/>
             <xsl:if test="position() != 1">
                 <xsl:text>,</xsl:text>
             </xsl:if>

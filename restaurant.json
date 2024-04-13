@@ -98,9 +98,9 @@
       "description": "Řízek s hranolky",
       "properties": {
         "ingrodients": [
-          "Řízek",
           "Hranolky",
-          "Ketčup"
+          "Ketčup",
+          "Řízek"
         ],
         "calories": "800"
       }
@@ -119,8 +119,8 @@
       "description": "Koleno s knedlíkem",
       "properties": {
         "ingrodients": [
-          "Koleno",
           "Knedlík",
+          "Koleno",
           "Šťáva"
         ],
         "calories": "1000"
@@ -178,21 +178,6 @@
   ],
   "reservations": [
     {
-      "id": 1,
-      "date": "2024-04-20",
-      "time": "19:00",
-      "customer": {
-        "name": "John Doe",
-        "phone": {
-          "countryCode": "US",
-          "number": "123456789"
-        },
-        "email": "john.doe@example.com"
-      },
-      "partySize": 4,
-      "specialRequests": "Window seat, allergy to nuts"
-    },
-    {
       "id": 2,
       "date": "2024-04-22",
       "time": "18:30",
@@ -206,6 +191,21 @@
       },
       "partySize": 2,
       "specialRequests": "Jenom vegan"
+    },
+    {
+      "id": 1,
+      "date": "2024-04-20",
+      "time": "19:00",
+      "customer": {
+        "name": "John Doe",
+        "phone": {
+          "countryCode": "US",
+          "number": "123456789"
+        },
+        "email": "john.doe@example.com"
+      },
+      "partySize": 4,
+      "specialRequests": "Window seat, allergy to nuts"
     }
   ]
 }
