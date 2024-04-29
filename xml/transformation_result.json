@@ -1,0 +1,238 @@
+{
+  "descriptions": [
+    {
+      "language": "cs",
+      "name": "ČZU Nutriční poradenství",
+      "slogan": "Dodáváme špičkovou výživu na každý talíř"
+    },
+    {
+      "language": "en",
+      "name": "ČZU Nutrition Consultancy",
+      "slogan": "Delivering peak nutrition to every plate"
+    }
+  ],
+  "contacts": {
+    "address": {
+      "latitude": "50.073658",
+      "longtitue": "14.418540",
+      "street": "Ulice 1",
+      "city": "Brno",
+      "zip": "12345",
+      "email": "ntrporadenstvi@mail.com"
+    },
+    "schedule": [
+      {
+        "day": "Pondělí",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "day": "Útery",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "day": "Středa",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "day": "Čtvrtek",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "day": "Pátek",
+        "from": "08:00",
+        "to": "22:00"
+      },
+      {
+        "day": "Sobota",
+        "from": "12:00",
+        "to": "16:00"
+      },
+      {
+        "day": "Nedele",
+        "from": "12:00",
+        "to": "16:00"
+      }
+    ],
+    "phones": [
+      {
+        "countryCode": "CZ",
+        "stationary": true,
+        "number": "123456789"
+      },
+      {
+        "countryCode": "DE",
+        "stationary": false,
+        "number": "123456789"
+      },
+      {
+        "countryCode": "GB",
+        "stationary": false,
+        "number": "123456789"
+      }
+    ],
+    "socialMedias": [
+      {
+        "platform": "facebook",
+        "name": "Facebook",
+        "url": "https://www.facebook.com"
+      },
+      {
+        "platform": "instagram",
+        "name": "Instagram",
+        "url": "https://www.instagram.com"
+      }
+    ]
+  },
+  "recipes": [
+    {
+      "id": 0,
+      "language": "cs",
+      "happyTime": true,
+      "vegan": true,
+      "category": "czech",
+      "name": "Zdravé těstoviny s lososem",
+      "price": {
+        "currency": "CZK",
+        "amount": "50"
+      },
+      "description": "Máte rádi těstoviny s lososem a hledáte inspiraci pro zdravou večeři? Vyzkoušejte naši lehčí recepturu s lososem, těstovinami penne, zeleninou a bazalkou – je čerstvá, chutná a plná zdraví.",
+      "properties": {
+        "ingrodients": [
+          "Losos",
+          "Mrkev",
+          "Testoviny"
+        ],
+        "calories": "500"
+      }
+    },
+    {
+      "id": 1,
+      "language": "cs",
+      "happyTime": false,
+      "vegan": false,
+      "category": "czech",
+      "name": "Ponzu tofu poke miska",
+      "price": {
+        "currency": "CZK",
+        "amount": "250"
+      },
+      "description": "Použijte hedvábné tofu k přípravě této chuťově bohaté poke mísky. Je podobná japonskému jídlu zvanému „hiyayakko“, které se obvykle jí v hlavním létě.",
+      "properties": {
+        "ingrodients": [
+          "Máslo",
+          "Mrkev",
+          "Tofu"
+        ],
+        "calories": "462"
+      }
+    },
+    {
+      "id": 2,
+      "language": "en",
+      "happyTime": false,
+      "vegan": false,
+      "category": "czech",
+      "name": "Healthy pesto eggs on toast",
+      "price": {
+        "currency": "CZK",
+        "amount": "550"
+      },
+      "description": "Try a speedy, low-fat pesto as a delicious alternative to oil for frying eggs - it adds great flavour to the dish, too, to make a perfect brunch or lunch",
+      "properties": {
+        "ingrodients": [
+          "Bread",
+          "Eggs",
+          "Garlik"
+        ],
+        "calories": "287"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "id": "0",
+      "language": "cs",
+      "title": "Avokádo denně může zlepšit kvalitu stravy",
+      "description": "Tento článek pojednává o studii, která ukázala, že denní konzumace avokáda významně zlepšuje kvalitu stravy. Studie zdůrazňuje, že zařazení avokád do jídelníčku podporuje dodržování zdravých stravovacích návyků, možná díky jejich bohatému nutričnímu profilu",
+      "date": "2024-05-01"
+    },
+    {
+      "id": "1",
+      "language": "cs",
+      "title": "V kávě a lidském těle nalezená přírodní molekula zvyšuje hladiny NAD+ a zlepšuje funkci svalů při stárnutí",
+      "description": "Výzkumníci zjistili, že trigonelin, přírodní molekula přítomná v kávě a lidském těle, může zvýšit hladiny NAD+ a zlepšit funkci svalů během stárnutí. Toto objevení ukazuje na potenciální dietní intervence pro udržení svalového zdraví s věkem",
+      "date": "2024-05-01"
+    },
+    {
+      "id": "2",
+      "language": "cs",
+      "title": "Jaká je nejzdravější strava?",
+      "description": "Tento článek prozkoumává různé zdravé diety a poskytuje vhledy na základě nejnovějšího vědeckého výzkumu. Čtenáře povzbuzuje, aby zvážili, jak volby v oblasti stravy ovlivňují celkové zdraví, a nabízí pokyny pro výběr nejzdravějších možností pro jednotlivce i rodiny",
+      "date": "2024-05-01"
+    }
+  ],
+  "team": [
+    {
+      "name": "Jan Novák",
+      "position": "Manager"
+    },
+    {
+      "name": "Josef Novotný",
+      "position": "Waiter"
+    },
+    {
+      "name": "Marie Dvořáková",
+      "position": "Cook"
+    }
+  ],
+  "reviews": [
+    {
+      "rating": 5,
+      "author": "Jan Novák",
+      "position": "CEO & Founder INC",
+      "comment": "Skvělé jídlo"
+    },
+    {
+      "rating": 4,
+      "author": "Josef Novotný",
+      "position": "CEO & Founder INC",
+      "comment": "Super obsluha"
+    }
+  ],
+  "reservations": [
+    {
+      "id": 2,
+      "date": "2024-04-22",
+      "time": "18:30",
+      "customer": {
+        "name": "Jan Novák",
+        "phone": {
+          "countryCode": "CZ",
+          "number": "123456789"
+        },
+        "email": "jane.smith@example.com"
+      },
+      "partySize": 2,
+      "specialRequests": "Jenom vegan"
+    },
+    {
+      "id": 1,
+      "date": "2024-04-20",
+      "time": "19:00",
+      "customer": {
+        "name": "John Doe",
+        "phone": {
+          "countryCode": "US",
+          "number": "123456789"
+        },
+        "email": "john.doe@example.com"
+      },
+      "partySize": 4,
+      "specialRequests": "Window seat, allergy to nuts"
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<consultancy>
+    <descriptions>
+        <description language="cs">
+            <name>ČZU Nutriční poradenství</name>
+            <slogan>Dodáváme špičkovou výživu na každý talíř</slogan>
+        </description>
+        <description language="en">
+            <name>ČZU Nutrition Consultancy</name>
+            <slogan>Delivering peak nutrition to every plate</slogan>
+        </description>
+    </descriptions>
+
+    <contacts>
+        <address latitude="50.073658" longtitue="14.418540">
+            <street>Ulice 1</street>
+            <city>Brno</city>
+            <zip>12345</zip>
+            <email>ntrporadenstvi@mail.com</email>
+        </address>
+
+        <schedule>
+            <day>
+                <name>Pondělí</name>
+                <from>08:00</from>
+                <to>22:00</to>
+            </day>
+            <day>
+                <name>Útery</name>
+                <from>08:00</from>
+                <to>22:00</to>
+            </day>
+            <day>
+                <name>Středa</name>
+                <from>08:00</from>
+                <to>22:00</to>
+            </day>
+            <day>
+                <name>Čtvrtek</name>
+                <from>08:00</from>
+                <to>22:00</to>
+            </day>
+            <day>
+                <name>Pátek</name>
+                <from>08:00</from>
+                <to>22:00</to>
+            </day>
+            <day>
+                <name>Sobota</name>
+                <from>12:00</from>
+                <to>16:00</to>
+            </day>
+            <day>
+                <name>Nedele</name>
+                <from>12:00</from>
+                <to>16:00</to>
+            </day>
+        </schedule>
+
+        <phones>
+            <phone countryCode="CZ" stationary="true">123456789</phone>
+            <phone countryCode="DE" stationary="false">123456789</phone>
+            <phone countryCode="GB" stationary="false">123456789</phone>
+        </phones>
+
+        <socialMedias>
+            <socialMedia platform="facebook">
+                <name>Facebook</name>
+                <url>https://www.facebook.com</url>
+            </socialMedia>
+            <socialMedia platform="instagram">
+                <name>Instagram</name>
+                <url>https://www.instagram.com</url>
+            </socialMedia>
+        </socialMedias>
+    </contacts>
+
+    <recipes>
+        <recipe id="0" language="cs" happyTime="true" vegan="true" category="czech">
+            <name>Zdravé těstoviny s lososem</name>
+            <price currency="CZK">50</price>
+            <description>Máte rádi těstoviny s lososem a hledáte inspiraci pro zdravou večeři? Vyzkoušejte naši lehčí recepturu s lososem, těstovinami penne, zeleninou a bazalkou – je čerstvá, chutná a plná zdraví.</description>
+            <properties>
+                <ingrodients>
+                    <ingrodient>Losos</ingrodient>
+                    <ingrodient>Testoviny</ingrodient>
+                    <ingrodient>Mrkev</ingrodient>
+                </ingrodients>
+                <calories>500</calories>
+            </properties>
+        </recipe>
+        <recipe id="1" language="cs" happyTime="false" vegan="false" category="czech">
+            <name>Ponzu tofu poke miska</name>
+            <price currency="CZK">250</price>
+            <description>Použijte hedvábné tofu k přípravě této chuťově bohaté poke mísky. Je podobná japonskému jídlu zvanému „hiyayakko“, které se obvykle jí v hlavním létě.</description>
+            <properties>
+                <ingrodients>
+                    <ingrodient>Tofu</ingrodient>
+                    <ingrodient>Máslo</ingrodient>
+                    <ingrodient>Mrkev</ingrodient>
+                </ingrodients>
+                <calories>462</calories>
+            </properties>
+        </recipe>
+        <recipe id="2" language="en" happyTime="false" vegan="false" category="czech">
+            <name>Healthy pesto eggs on toast</name>
+            <price currency="CZK">550</price>
+            <description>Try a speedy, low-fat pesto as a delicious alternative to oil for frying eggs - it adds great flavour to the dish, too, to make a perfect brunch or lunch</description>
+            <properties>
+                <ingrodients>
+                    <ingrodient>Bread</ingrodient>
+                    <ingrodient>Garlik</ingrodient>
+                    <ingrodient>Eggs</ingrodient>
+                </ingrodients>
+                <calories>287</calories>
+            </properties>
+        </recipe>
+    </recipes>
+
+    <articles>
+        <article id="0" language="cs">
+            <title>Avokádo denně může zlepšit kvalitu stravy</title>
+            <description>Tento článek pojednává o studii, která ukázala, že denní konzumace avokáda významně zlepšuje kvalitu stravy. Studie zdůrazňuje, že zařazení avokád do jídelníčku podporuje dodržování zdravých stravovacích návyků, možná díky jejich bohatému nutričnímu profilu</description>
+            <date>2024-05-01</date>
+        </article>
+        <article id="1" language="cs">
+            <title>V kávě a lidském těle nalezená přírodní molekula zvyšuje hladiny NAD+ a zlepšuje funkci svalů při stárnutí</title>
+            <description>Výzkumníci zjistili, že trigonelin, přírodní molekula přítomná v kávě a lidském těle, může zvýšit hladiny NAD+ a zlepšit funkci svalů během stárnutí. Toto objevení ukazuje na potenciální dietní intervence pro udržení svalového zdraví s věkem</description>
+            <date>2024-05-01</date>
+        </article>
+        <article id="2" language="cs">
+            <title>Jaká je nejzdravější strava?</title>
+            <description>Tento článek prozkoumává různé zdravé diety a poskytuje vhledy na základě nejnovějšího vědeckého výzkumu. Čtenáře povzbuzuje, aby zvážili, jak volby v oblasti stravy ovlivňují celkové zdraví, a nabízí pokyny pro výběr nejzdravějších možností pro jednotlivce i rodiny</description>
+            <date>2024-05-01</date>
+        </article>
+    </articles>
+
+    <team>
+        <member>
+            <name>Jan Novák</name>
+            <position>Manager</position>
+        </member>
+        <member>
+            <name>Josef Novotný</name>
+            <position>Waiter</position>
+        </member>
+        <member>
+            <name>Marie Dvořáková</name>
+            <position>Cook</position>
+        </member>
+    </team>
+
+    <reviews>
+        <review rating="5">
+            <author>Jan Novák</author>
+            <position>CEO &amp; Founder INC</position>
+            <comment>Skvělé jídlo</comment>
+        </review>
+        <review rating="4">
+            <author>Josef Novotný</author>
+            <position>CEO &amp; Founder INC</position>
+            <comment>Super obsluha</comment>
+        </review>
+    </reviews>
+
+    <reservations>
+        <reservation id="1" date="2024-04-20" time="19:00">
+            <customer>
+                <name>John Doe</name>
+                <phone countryCode="US">123456789</phone>
+                <email>john.doe@example.com</email>
+            </customer>
+            <partySize>4</partySize>
+            <specialRequests>Window seat, allergy to nuts</specialRequests>
+        </reservation>
+        <reservation id="2" date="2024-04-22" time="18:30">
+            <customer>
+                <name>Jan Novák</name>
+                <phone countryCode="CZ">123456789</phone>
+                <email>jane.smith@example.com</email>
+            </customer>
+            <partySize>2</partySize>
+            <specialRequests>Jenom vegan</specialRequests>
+        </reservation>
+    </reservations>
+</consultancy>

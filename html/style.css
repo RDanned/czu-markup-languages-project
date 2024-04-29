@@ -1,0 +1,241 @@
+/* Global styles */
+* {
+  font-size: 30px;
+}
+
+body {
+  background-color: #fef4e8;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+}
+
+/* Header styles */
+header {
+  background-color: #fef4e8;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 0px 0px;
+}
+
+.logo img {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  object-fit: contain;
+}
+
+.logo img:hover {
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main content styles */
+.hero-image {
+  background-image: url("/img/ORFF2A0.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  color: #0776ff;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.hero-text p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.recipes,
+.articles {
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.recipes h2,
+.articles h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.recipes-items,
+.articles-items {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.recipe-item,
+.article-item {
+  flex-basis: calc(33.33% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fef4e8;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.recipe-item img,
+.article-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.recipe-item h3,
+.article-item h3 {
+  margin: 0;
+}
+
+.recipe-item p,
+.article-item p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+aside {
+  display: block;
+  padding: 50px;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+time {
+  font-style: italic;
+  color: #999;
+}
+.price {
+  font-weight: bold;
+}
+
+.about {
+  padding: 50px;
+}
+
+.about h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.contact {
+  padding: 50px;
+  background-color: #fef4e8;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.btnForm {
+  height: 80px;
+  width: 150px;
+}
+
+form textarea {
+  height: 150px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.social-icons a i {
+  font-size: 24px;
+  color: #666;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover i {
+  color: #000;
+}
